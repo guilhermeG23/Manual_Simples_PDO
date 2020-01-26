@@ -1,11 +1,25 @@
-#Manual PDO Simples
+# Manual PDO Simples
 
-#Fazer conexão com um banco em PDO
+Manual simples de PDO, feito só para marcar algumas informações e métodos que achei para resolver meus problemas.
 
+### Antes de tudo
+
+Lembre-se, para o PDO funcionar, seu servidor deve prover essa função.
+
+Necessita de:
+* habilitar no PHP;
+* Ter o driver PDO para fazer a comunicação dom o banco;
+
+### Fazer conexão com um banco em PDO
+
+Forma simples de fazer uma conexão ao banco com o uso de PDO
+
+```
 <?php
 #Forma simples de fazer uma conexão PDO
 $PDO = new PDO("<ODBC>:host=<maquina>;port=<porta>;dbname=<tabela>", "usuario do banco", "senha do banco");
 ?>
+```
 
 #Chamar informação com um UTF configurado
 
